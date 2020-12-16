@@ -1,0 +1,82 @@
+/*******
+****** MAIN SCSSS
+****/
+/* Variables */
+/* commons */
+/* general setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color {
+  color: blue;
+}
+
+.after::after {
+  display: table;
+  content: "";
+  border: 3px solid blue;
+  width: 125px;
+  margin-top: 20px;
+}
+
+/* utilities */
+/* header */
+/* HEADER */
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  height: 70px;
+}
+.navbar img {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.navbar p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: gray;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.scrollable {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.scrollable h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.scrollable p {
+  display: flex;
+  padding: 0px 200px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+section ul {
+  display: flex;
+}
+section ul li {
+  padding: 0px 25px;
+  list-style: none;
+}
+
+/* main */
+/* footer */

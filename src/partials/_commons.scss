@@ -1,0 +1,25 @@
+/* general setting */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.color{
+    color:$secondary-color;
+}
+
+
+.after::after{
+    display: table;
+    content: "";
+    border: 3px solid $secondary-color;
+    width: 125px;
+    margin-top: 20px;
+}
+
+
+
+
