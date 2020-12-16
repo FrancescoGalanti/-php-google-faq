@@ -13,7 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('src/js/main.js', 'dist/js/main.js').sass('src/scss/main.scss', 'dist/css/main.css').options({  
     processCssUrls: false,
-});
+})
+.browserSync({
+    proxy: 'http://localhost/php-google-faq/',
+    watch: true,
+    files: ['./**/*.css', './**/*.js', './**/*.+(html|php)'],
+})
 
       
     
